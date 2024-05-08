@@ -23,7 +23,7 @@ INSERT INTO track (name_track, albom, duration_track) VALUES
 ('Сибирь', '2', '163'),
 ('Вечерком', '2', '189'),
 ('Ясный сокол', '1', '241'),
-('Купола', '4', '262');
+('Купола', '3', '262');
 
 
 INSERT INTO album (name_genre, year_album) VALUES 
@@ -40,8 +40,27 @@ INSERT INTO collections (name_collection, year_collection) VALUES
 ('Песня года', '2020');
 
 INSERT INTO collections_track (id_collection, id_track) VALUES 
-('1', '2')
-('2', '2')
-('3', '2')
-('4', '2')
+('1', '2'),
+('1', '3'),
+('2', '2'),
+('2', '3'),
+('2', '4'),
+('3', '1'),
+('3', '2'),
+('3', '3'),
+('3', '4'),
+('4', '1'),
+('4', '2');
 
+INSERT INTO album_a (id_album, id_artist) VALUES
+('1', '3'),
+('2', '1'),
+('3', '4'),
+('4', '2');
+
+INSERT INTO genre_artist (id_artist, id_genre) VALUES
+('1', '1'),
+('2', '3'),
+('2', '4'),
+('3', '3'),
+('4', '2');
