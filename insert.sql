@@ -26,7 +26,7 @@ INSERT INTO album (name_genre, year_album) VALUES
 ('ЗавеД', '2018'),
 ('Живая струна', '2010'),
 ('Подруга', '2017');
-
+RETURNING *;
 
 INSERT INTO collections (name_collection, year_collection) VALUES 
 ('Союз', '2000'),
@@ -36,7 +36,7 @@ INSERT INTO collections (name_collection, year_collection) VALUES
 RETURNING *;
  
 
- 
+
 INSERT INTO collections_track (id_collection, id_track) VALUES 
 ('1', '2'),
 ('1', '3'),
