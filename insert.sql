@@ -1,18 +1,12 @@
 
--- вариант 1
+INSERT INTO genre (name_genre) VALUES 
+('Славянский фолк'), ('Шансон'), ('Поп'), ('Евродэнс')
+RETURNING *;
 
-INSERT INTO genre (name_genre) VALUES ('Славянский фолк');
-INSERT INTO genre (name_genre) VALUES ('Шансон');
-INSERT INTO genre (name_genre) VALUES ('Поп');
-INSERT INTO genre (name_genre) VALUES ('Евродэнс');
-
--- вавриат 2
 
 INSERT INTO artist (nick_name) VALUES 
-('Николай Емелин'),
-('Шура'),
-('Ирина Салтыкова'),
-('Круг');
+('Николай Емелин'), ('Шура'), ('Ирина Салтыкова'), ('Круг')
+RETURNING *;
 
 
 INSERT INTO track (name_track, albom, duration_track) VALUES 
@@ -24,6 +18,7 @@ INSERT INTO track (name_track, albom, duration_track) VALUES
 ('Вечерком', '2', '189'),
 ('Ясный сокол', '1', '241'),
 ('Купола', '3', '262');
+RETURNING *;
 
 
 INSERT INTO album (name_genre, year_album) VALUES 
