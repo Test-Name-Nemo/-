@@ -1,5 +1,10 @@
 -- Задание 2
 -- Название и продолжительность самого длительного трека.
+-- Вариант 1
+SELECT name_track, duration_track FROM track
+WHERE duration_track = (SELECT max(duration_track) FROM track);
+
+-- Ваиант 2
 SELECT name_track, duration_track FROM track
 ORDER BY duration_track DESC
 LIMIT 1;
